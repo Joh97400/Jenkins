@@ -53,7 +53,7 @@ p{
 		<!-- Titre generale -->
 		<div id="titre">TimDevOps</div>
 		<p>Votre version de logiciel est <?php echo $couleur;?>.</p>
-		<p>Vous êtes connecté sur la machine de <?php echo gethostname(); ?>.</p>
+		<p>Vous êtes connecté sur la machine de <?php echo gethostname();?>.</p>
 	</div>
 </body>
 </html>
