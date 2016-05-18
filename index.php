@@ -3,7 +3,7 @@
 <!-- Déclaration des normes et des caracteristiques de la page-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title> Bienvenue sur TimDevOps </title>
+<title> Bienvenue sur TiDevOps </title>
 <style type="text/css">
 /* Paramétrage du corps de la page */
 body{
