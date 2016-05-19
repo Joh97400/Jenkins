@@ -3,7 +3,7 @@
 <!-- Déclaration des normes et des caracteristiques de la page-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title> Bienvenue sur TimDevOps </title>
+<title> Bienvenue sur TiDevOps </title>
 <style type="text/css">
 /* Paramétrage du corps de la page */
 body{
@@ -26,7 +26,7 @@ p{
 	margin-right:auto;
 	height : 450px;
 	width: 710px; /* largeur obligatoire pour être centré */
-	background-color : <?php $couleur ="purple";echo $couleur; // Je commente  à la fin même si je n'ai pas le droit ?>;
+	background-color : <?php $couleur ="purple";echo $couleur; ?>;
 	border-radius: 10px;
 }
 #version{
