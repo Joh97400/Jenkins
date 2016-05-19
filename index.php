@@ -3,7 +3,7 @@
 <!-- Déclaration des normes et des caracteristiques de la page-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title> Bienvenue sur TDevOps </title>
+<title> Bienvenue sur TimDevOps </title>
 <style type="text/css">
 /* Paramétrage du corps de la page */
 body{
@@ -12,7 +12,7 @@ body{
 	margin-top : 74px;
 }
 
-/** Paramétrage des titres **/
+/* Paramétrage des titres */
 p{
 	font-size : 27px;
 	font-family : Comic Sans;
@@ -26,7 +26,7 @@ p{
 	margin-right:auto;
 	height : 450px;
 	width: 710px; /* largeur obligatoire pour être centré */
-	background-color : <?php $couleur ="white";echo $couleur; ?>;
+	background-color : <?php $couleur ="purple";echo $couleur; // Je commente  à la fin même si je n'ai pas le droit ?>;
 	border-radius: 10px;
 }
 #version{
@@ -45,15 +45,31 @@ p{
 	font-size : 47px;
 }
 </style>
+<script type="text/javascript">
+function toggle_div(bouton, id) { // On déclare la fonction toggle_div qui prend en param le bouton et un id
+  var div = document.getElementById(id); // On récupère le div ciblé grâce à l'id
+  if(div.style.display=="none") { // Si le div est masqué...
+    div.style.display = "block"; // ... on l'affiche...
+	bouton.value="Masquer les détails"; // on change la valeur du bouton
+  } else { // S'il est visible...
+    div.style.display = "none"; // ... on le masque...
+	bouton.value ="Plus de détails...";// on change la valeur du bouton
+  }
+}
+</script>
 </head>
 <body>
 	<div id="color">
-		<applet code="devops.class" width="300" height="150"></applet>
+		<!-- <applet code="devops.class" width="400" height="150"></applet>-->
 		<div id="version">Version 1.0</div>
 		<!-- Titre generale -->
 		<div id="titre">TimDevOps</div>
 		<p>Votre version de logiciel est <?php echo $couleur;?>.</p>
-		<p>Vous êtes connecté sur la machine de <?php echo gethostname();?>.</p>
+		<input type="button" onclick="toggle_div(this,'details');" value="Plus de détails..."/>
+		<div id="details" style="display:none;">
+			<p>Vous êtes connecté sur la machine de <?php echo gethostname(); ?>.</p>
+		</div>
+		
 	</div>
 </body>
 </html>
