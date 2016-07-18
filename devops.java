@@ -14,6 +14,6 @@ public class devops extends Applet
 {
    public void paint (Graphics g)
    {
-      g.drawString ("Build ok", 25, 50);
+      g.drawString ("Starting deployment from the post-action... Finished: SUCCESS", 25, 70);
    }
 }
