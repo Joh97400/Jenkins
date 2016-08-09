@@ -3,7 +3,7 @@
 <!-- Déclaration des normes et des caracteristiques de la page-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title> Bienvenue sur TimDevOps </title>
+<title> Bienvenue sur TiDevOps </title>
 <style type="text/css">
 /* Paramétrage du corps de la page */
 body{
@@ -64,7 +64,7 @@ function toggle_div(bouton, id) { // On déclare la fonction toggle_div qui pren
 		<div id="version">Version 1.0</div>
 		<!-- Titre generale -->
 		<div id="titre">TimDevOps</div>
-		<p>Votre version de logiciel est <?php echo $couleur;?>.</p>
+		<p>Votre version de logiciel est <?php echo $couleur; // Je commente à la fin?>.</p>
 		<input type="button" onclick="toggle_div(this,'details');" value="Plus de détails..."/>
 		<div id="details" style="display:none;">
 			<p>Vous êtes connecté sur la machine de <?php echo gethostname(); ?>.</p>
