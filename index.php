@@ -26,7 +26,7 @@ p{
 	margin-right:auto;
 	height : 450px;
 	width: 710px; /* largeur obligatoire pour être centré */
-	background-color : <?php $couleur ="blue";echo $couleur;?>;
+	background-color : <?php $couleur ="green";echo $couleur;?>;
 	border-radius: 10px;
 }
 #version{
