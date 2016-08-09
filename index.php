@@ -7,42 +7,42 @@
 <style type="text/css">
 /* Paramétrage du corps de la page */
 body{
-	background-color: #EEEEEE ;
+	background-color: white ;
 	text-align : center;
 	margin-top : 74px;
-}
-
-/* Paramétrage des titres */
-p{
-	font-size : 27px;
-	font-family : Comic Sans;
+	font-family : Georgia;
+	font-size : 22px;
 }
 /* Paramétrage de la div color */
 #color{
 	border: 15px groove;
 	position : relative;
-	margin-top : 50px;
+	margin-top : 250px;
 	margin-left: auto;
 	margin-right:auto;
-	height : 450px;
+	height : 250px;
 	width: 710px; /* largeur obligatoire pour être centré */
 	background-color : <?php $couleur ="purple";echo $couleur;?>;
 	border-radius: 10px;
 }
 #version{
-	margin-bottom : 80px;
+	margin-bottom : 10px;
 	margin-top : 5px;
 	margin-right : 5px;
 	positon:absolute;
 	width :100px; 
+	font-family : Trebuchet MS;
+	font-weight: bold;
+	font-size : 17px;
 }
 #titre{
-	color : green;
+	margin-bottom : 35px;
+	background-color : white;
+	color : #1C3F8C;
 	font-family : Coronetscript;
-	left : 40px;
-	margin-bottom : 75px;
-	position : float;
-	font-size : 47px;
+	font-size : 37px;
+	positon:absolute;
+	width :710px; 
 }
 </style>
 <script type="text/javascript">
@@ -64,10 +64,10 @@ function toggle_div(bouton, id) { // On déclare la fonction toggle_div qui pren
 		<div id="version">Version 1.0</div>
 		<!-- Titre generale -->
 		<div id="titre">TimDevOps</div>
-		<p>Votre version de logiciel est <?php echo $couleur;?>.</p>
-		<input type="button" onclick="toggle_div(this,'details');" value="Plus de détails..."/>
+		Votre version de logiciel est <?php echo $couleur;?>.</br></br>
+		<input type="button" onclick="toggle_div(this,'details');" value="Plus de détails..."/></br></br>
 		<div id="details" style="display:none;">
-			<p>Vous êtes connecté sur la machine de <?php echo gethostname(); ?>.</p>
+			Vous êtes connecté sur la machine de <?php echo gethostname(); ?>.
 		</div>
 		
 	</div>
