@@ -3,7 +3,7 @@
 <!-- Déclaration des normes et des caracteristiques de la page-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title> Bienvenue sur TimDevps </title>
+<title> Bienvenue sur TimDevOps </title>
 <style type="text/css">
 /* Paramétrage du corps de la page */
 body{
@@ -26,7 +26,7 @@ p{
 	margin-right:auto;
 	height : 450px;
 	width: 710px; /* largeur obligatoire pour être centré */
-	background-color : <?php $couleur ="pink";echo $couleur;?>;
+	background-color : <?php $couleur ="blue";echo $couleur;?>;
 	border-radius: 10px;
 }
 #version{
@@ -64,7 +64,7 @@ function toggle_div(bouton, id) { // On déclare la fonction toggle_div qui pren
 		<div id="version">Version 1.0</div>
 		<!-- Titre generale -->
 		<div id="titre">TimDevOps</div>
-		<p>Votre version de logiciel est <?php echo $couleur; // Je commente à la fin ?>.</p>
+		<p>Votre version de logiciel est <?php echo $couleur;?>.</p>
 		<input type="button" onclick="toggle_div(this,'details');" value="Plus de détails..."/>
 		<div id="details" style="display:none;">
 			<p>Vous êtes connecté sur la machine de <?php echo gethostname(); ?>.</p>
