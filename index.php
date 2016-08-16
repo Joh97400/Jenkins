@@ -1,75 +1,74 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" >
-<!-- Déclaration des normes et des caracteristiques de la page-->
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title> Bienvenue sur TimDevOps </title>
-<style type="text/css">
-/* Paramétrage du corps de la page */
-body{
-	background-color: white ;
-	text-align : center;
-	margin-top : 74px;
-	font-family : Georgia;
-	font-size : 22px;
-}
-/* Paramétrage de la div color */
-#color{
-	border: 15px groove;
-	position : relative;
-	margin-top : 250px;
-	margin-left: auto;
-	margin-right:auto;
-	height : 250px;
-	width: 710px; /* largeur obligatoire pour être centré */
-	background-color : <?php $couleur ="purple";echo $couleur;?>;
-	border-radius: 10px;
-}
-#version{
-	margin-bottom : 10px;
-	margin-top : 5px;
-	margin-right : 5px;
-	positon:absolute;
-	width :100px; 
-	font-family : Trebuchet MS;
-	font-weight: bold;
-	font-size : 17px;
-}
-#titre{
-	margin-bottom : 35px;
-	background-color : white;
-	color : #1C3F8C;
-	font-family : Coronetscript;
-	font-size : 37px;
-	positon:absolute;
-	width :710px; 
-}
-</style>
-<script type="text/javascript">
-function toggle_div(bouton, id) { // On déclare la fonction toggle_div qui prend en param le bouton et un id
-  var div = document.getElementById(id); // On récupère le div ciblé grâce à l'id
-  if(div.style.display=="none") { // Si le div est masqué...
-    div.style.display = "block"; // ... on l'affiche...
-	bouton.value="Masquer les détails"; // on change la valeur du bouton
-  } else { // S'il est visible...
-    div.style.display = "none"; // ... on le masque...
-	bouton.value ="Plus de détails...";// on change la valeur du bouton
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Bienvenue sur TimDevOps</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+	<script type="text/javascript">
+	function toggle_div(bouton, id) { // On déclare la fonction toggle_div qui prend en param le bouton et un id
+	  var div = document.getElementById(id); // On récupère le div ciblé grâce à l'id
+	  if(div.style.display=="none") { // Si le div est masqué...
+		div.style.display = "block"; // ... on l'affiche...
+		bouton.value="Masquer les détails"; // on change la valeur du bouton
+	  } else { // S'il est visible...
+		div.style.display = "none"; // ... on le masque...
+		bouton.value ="Plus de détails...";// on change la valeur du bouton
+	  }
+	}
 </script>
-</head>
-<body>
-	<div id="color">
-		<!-- <applet code="devops.class" width="400" height="150"></applet>-->
-		<div id="version">Version 1.0</div>
-		<!-- Titre generale -->
-		<div id="titre">TimDevOps</div>
-		Votre version de logiciel est <?php echo $couleur;?>.</br></br>
+ <style type="text/css">
+	body{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;line-height:1.846;
+	color:#666666;background-color:<?php $couleur ="white";echo $couleur;?>}
+ </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Timspirit</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <!--<li class="active"><a href="#">Logiciel</a></li>
+           <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+		<h1>DevOps</h1>
+		Votre version de logiciel est <?php echo $couleur;?>. </br>Timspirit © </br>
+		
 		<input type="button" onclick="toggle_div(this,'details');" value="Plus de détails..."/></br></br>
 		<div id="details" style="display:none;">
 			Vous êtes connecté sur la machine de <?php echo gethostname(); ?>.
 		</div>
-		
-	</div>
-</body>
+
+    </div>
+  </body>
 </html>
