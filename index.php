@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Bienvenue sur TimDevOps</title>
+    <title>Bienvenue sur TiDevOps</title>
 
     <!-- Bootstrap core CSS -->
     <link href="style.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 </script>
  <style type="text/css">
 	body{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;line-height:1.846;
-	color:#666666;background-color:<?php $couleur ="white";echo $couleur;?>}
+	color:#666666;background-color:<?php $couleur ="yellow";echo $couleur;?>}
  </style>
   </head>
 
