@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Bienvenue sur TiDevOps</title>
+    <title>Bienvenue sur TimDevOps</title>
 
     <!-- Bootstrap core CSS -->
     <link href="style.css" rel="stylesheet">
