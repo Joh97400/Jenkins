@@ -8,15 +8,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
     <title>Bienvenue sur TimDevOps</title>
-
     <!-- Bootstrap core CSS -->
     <link href="style.css" rel="stylesheet">
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
-
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
 	<script type="text/javascript">
@@ -33,12 +29,10 @@
 </script>
  <style type="text/css">
 	body{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;font-size:13px;line-height:1.846;
-	color:#666666;background-color:<?php $couleur ="white";echo $couleur;?>}
+	color:#666666;background-color:<?php $couleur ="yellow";echo $couleur;?>}
  </style>
   </head>
-
   <body>
-
     <nav class="navbar navbar-inverse">
       <div class="container">
         <div class="navbar-header">
@@ -59,16 +53,13 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-
     <div class="container">
 		<h1>DevOps</h1>
 		Votre version de logiciel est <?php echo $couleur;?>. </br>Timspirit © </br>
-		
-		<input type="button" onclick="toggle_div(this,'details');" value="Plus de détails..."/></br></br>
+		<input type="buton" onclick="toggle_div(this,'details');" value="Plus de détails..."/></br></br>
 		<div id="details" style="display:none;">
-			Vous êtes connecté sur la machine de <?php echo gethostname(); // je commente ici même si erreur?>.
+			Vous êtes connecté sur la machine de <?php echo gethostname();?>.
 		</div>
-
     </div>
   </body>
 </html>
